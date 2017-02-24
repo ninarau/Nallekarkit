@@ -5,13 +5,79 @@
   <title>TeddyTiming</title>
   <base href="/">
 
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
+
 <body>
-<h1 id="test">teddy timing</h1>
-<h2>to do list</h2>
-<app-root>Loading...</app-root>
+  <div id="bg-container">
+
+    <div class="header">
+      <img id="logo" src="assets/black_logo.png"/>
+    </div>
+
+    <div class="container-fluid">
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
+          <div class="navbar-nav">
+            <nav id="menu">
+              <h2>my lists</h2>
+              <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+              <ul>
+                <li>
+                  <a href="#">List 1</a>
+                </li>
+                <li>
+                  <a href="#">List 2</a>
+                </li>
+                <li>
+                  <a href="#">List 3</a>
+                </li>
+              </ul>
+
+              <p>Check your weather!</p>
+
+            </nav>
+
+            <span class="typcn typcn-th-menu" id="openbtn" onclick="openNav()"></span>
+
+            <h2 id="barheader">TO DO</h2>
+          </div>
+        <!-- </div> -->
+      </nav>
+    </div>
+
+    <div class="container">
+      <h2>my list</h2>
+      <app-root>Loading...</app-root>
+    </div>
+
+    <footer>
+      <p>TeddyTiming 2017</p>
+    </footer>
+  </div>
+
+  <script>
+    function openNav() {
+        document.getElementById("menu").style.width = "400px";
+        document.getElementById("bg-container").style.marginLeft = "400px";
+    }
+
+    function closeNav() {
+        document.getElementById("menu").style.width = "0px";
+        document.getElementById("bg-container").style.marginLeft = "0px";
+    }
+  </script>
+
+
 </body>
 </html>

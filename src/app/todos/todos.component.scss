@@ -1,16 +1,25 @@
 .todos {
-  border: solid 1px #006699;
+  width: 100%;
   padding: 20px;
-  background: #f3f3f3;
-  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
 }
 
 .todos input.textfield {
-  width: 480px;
+  /*width: 480px;*/
   height: 36px;
   margin-right: 20px;
   font-size: 1.4em;
   vertical-align: top;
+}
+
+input[name="newTodo"] {
+  width: 500px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[name="newTodo"]:focus {
+  width: 970px;
 }
 
 .todos input.checkbox {
@@ -30,11 +39,31 @@
   border-radius: 2px;
 }
 
+#addbutton {
+  height: 36px;
+  font-size: 1.1em;
+  vertical-align: top;
+  border: solid 1px #999;
+  border-radius: 2px;
+  float: right;
+}
+
 .todos .delete-icon {
-  diplay: inline-block;
+  /*display: inline-block;*/
   cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px 12px 16px;
+}
+
+ul {
+  padding-top: 12px;
 }
 
 li {
   list-style-type: none;
+  font-size: 20px;
+  position: relative;
 }

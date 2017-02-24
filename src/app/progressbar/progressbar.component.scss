@@ -1,0 +1,29 @@
+p { margin: 0; }
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.ready {
+  font-size: 1.5em;
+}
+
+.progressbar-container {
+  position: relative;
+  z-index: 100;
+  width: 350px;
+
+  .progressbar-bar {
+    height: 25px;
+    margin: 10px 0;
+    border-radius: 7px;
+  }
+
+  .progressbar-label {
+    position: absolute;
+    top: 2px;
+    left: 45%;
+    z-index: 2;
+  }
+}

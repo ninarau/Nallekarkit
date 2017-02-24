@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './todos/todos.component';
 import { UserComponent } from './user/user.component';
+import { ProgressbarComponent } from './progressbar/progressbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodosComponent,
-    UserComponent
+    UserComponent,
+    ProgressbarComponent
   ],
   imports: [
     BrowserModule,
